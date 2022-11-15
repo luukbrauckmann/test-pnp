@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: Usual, Sans-serif;
+}
+
+body {
+	background-color: #eff3f8;
+}
+
+html {
+	height: 100%;
+}
+
+body,
+app-root,
+article,
+section {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	height: 100%;
+
+	&>header,
+	&>footer {
+		flex: 0 1 auto;
+	}
+
+	&>main,
+	&>div {
+		flex: 1 1 auto;
+	}
+
+	&>main {
+		padding: 0rem .5rem;
+	}
+}
